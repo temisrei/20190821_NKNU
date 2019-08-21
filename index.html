@@ -16,30 +16,54 @@
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <h1 class="display-4">鳶尾花預測</h1>
+      <p class="lead" id="answer">請輸入相關參數</p>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-sm">
-        One of three columns
+        <div class="form-group">
+          <label for="sepalLength">花萼長度</label>
+          <input type="number" value="6.4" step="0.1" class="form-control" id="sepalLength" placeholder="請輸入花萼長度">
+        </div>
       </div>
       <div class="col-sm">
-        One of three columns
+        <div class="form-group">
+          <label for="sepalWidth">花萼寬度</label>
+          <input type="number" value="2.8" step="0.1" class="form-control" id="sepalWidth" placeholder="請輸入花萼寬度">
+        </div>
       </div>
       <div class="col-sm">
-        One of three columns
+        <div class="form-group">
+          <label for="petalLength">花瓣長度</label>
+          <input type="number" value="5.6" step="0.1" class="form-control" id="petalLength" placeholder="請輸入花瓣長度">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="form-group">
+          <label for="petalWidth">花瓣寬度</label>
+          <input type="number" value="2.1" step="0.1" class="form-control" id="petalWidth" placeholder="請輸入花瓣寬度">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <button type="button" id="btnPredict" class="btn btn-block btn-primary">進行預測</button>
+        <button type="button" id="btnLIFF" class="btn btn-block btn-success">送到群組</button>
       </div>
     </div>
   </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
